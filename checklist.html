@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Checklist — HandaPH</title>
+<style>
+/* HandaPH simple prototype: boxes, a little color, no images */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #0b2a5b; background: #eef4fb; line-height: 1.5; }
+header { background: #0b2a5b; color: #fff; padding: 14px 20px; }
+.brand { margin: 0 0 10px; font-size: 1.6rem; font-weight: bold; }
+.brand span { font-size: 1rem; font-weight: normal; color: #fbc12c; margin-left: 10px; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+nav a { display: block; padding: 7px 14px; border: 2px solid #fff; border-radius: 8px; color: #fff; text-decoration: none; }
+nav a:hover { background: #1d5ba6; }
+nav a[aria-current="page"] { background: #fbc12c; border-color: #fbc12c; color: #0b2a5b; font-weight: bold; }
+main { max-width: 1050px; margin: 0 auto; padding: 20px; }
+h1 { margin: 8px 0 12px; }
+h2, h3 { margin: 0 0 8px; }
+main > h2 { margin-top: 28px; }
+.lead { font-size: 1.2rem; font-weight: bold; margin-top: 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 20px; }
+.box { background: #fff; border: 2px solid #1d5ba6; border-radius: 12px; padding: 16px; }
+.box ul { margin: 8px 0 0; padding-left: 20px; }
+.box ul.checks { list-style: none; padding-left: 0; }
+.box p { margin: 6px 0; }
+.btn, button { display: inline-block; background: #fbc12c; color: #0b2a5b; border: 2px solid #0b2a5b; border-radius: 8px; padding: 8px 18px; font-weight: bold; text-decoration: none; font-size: 1rem; cursor: pointer; }
+input[type="text"], input[type="tel"], input[type="email"], input[type="number"], textarea { width: 100%; border: 2px solid #9db8dd; border-radius: 8px; padding: 6px 8px; font: inherit; }
+a { color: #1d5ba6; }
+.note { background: #fff8e1; border: 2px solid #fbc12c; border-radius: 12px; padding: 12px 16px; font-weight: bold; }
+footer { background: #0b2a5b; color: #fff; text-align: center; padding: 6px 20px; }
+</style>
+</head>
+<body>
+<header>
+  <p class="brand">HandaPH <span>Be Prepared. Stay Safe.</span></p>
+  <nav aria-label="Main"><ul><li><a href="./">Home</a></li><li><a href="hazards.html">Choose Hazard</a></li><li><a href="checklist.html" aria-current="page">My Checklist</a></li><li><a href="kit-guide.html">Kit Guide</a></li><li><a href="family-plan.html">Family Plan</a></li><li><a href="about.html">About and Help</a></li></ul></nav>
+</header>
+<main>
+<h1>My Disaster Preparedness Checklist</h1>
+<div class="grid">
+<section class="box"><h2>Grab-and-Go Bag</h2><ul class="checks"><li><input type="checkbox" id="i1" checked> <label for="i1">Water</label></li><li><input type="checkbox" id="i2" checked> <label for="i2">Non-perishable food</label></li><li><input type="checkbox" id="i3" checked> <label for="i3">First-aid kit</label></li><li><input type="checkbox" id="i4"> <label for="i4">Flashlight</label></li></ul></section>
+<section class="box"><h2>Home Kit</h2><ul class="checks"><li><input type="checkbox" id="i5" checked> <label for="i5">Extra water (3-day supply)</label></li><li><input type="checkbox" id="i6" checked> <label for="i6">Canned goods and can opener</label></li><li><input type="checkbox" id="i7" checked> <label for="i7">Battery or crank radio</label></li><li><input type="checkbox" id="i8"> <label for="i8">Spare batteries and power bank</label></li></ul></section>
+<section class="box"><h2>Important Documents</h2><ul class="checks"><li><input type="checkbox" id="i9" checked> <label for="i9">Government IDs (copies)</label></li><li><input type="checkbox" id="i10" checked> <label for="i10">Insurance papers</label></li><li><input type="checkbox" id="i11" checked> <label for="i11">Land titles / lease contract</label></li><li><input type="checkbox" id="i12" checked> <label for="i12">Medical records</label></li><li><input type="checkbox" id="i13"> <label for="i13">Birth and marriage certificates</label></li><li><input type="checkbox" id="i14"> <label for="i14">Emergency contact list</label></li><li><input type="checkbox" id="i15"> <label for="i15">Cash in small bills</label></li></ul></section>
+<section class="box"><h2>Special Needs</h2><ul class="checks"><li><input type="checkbox" id="i16" checked> <label for="i16">Prescription medicines (7-day supply)</label></li><li><input type="checkbox" id="i17" checked> <label for="i17">Eyeglasses / hearing aid batteries</label></li><li><input type="checkbox" id="i18"> <label for="i18">Baby formula, diapers</label></li><li><input type="checkbox" id="i19"> <label for="i19">Pet food and carrier</label></li><li><input type="checkbox" id="i20"> <label for="i20">Mobility aids</label></li></ul></section>
+</div>
+<section class="box"><h2>Quick Tip</h2><p>Regularly check expiration dates on food and water.</p></section>
+</main>
+<footer><p>HandaPH &middot; Prepared Today. Safer Tomorrow.</p></footer>
+</body>
+</html>

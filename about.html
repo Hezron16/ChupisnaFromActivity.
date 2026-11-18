@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About and Help — HandaPH</title>
+<style>
+/* HandaPH simple prototype: boxes, a little color, no images */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #0b2a5b; background: #eef4fb; line-height: 1.5; }
+header { background: #0b2a5b; color: #fff; padding: 14px 20px; }
+.brand { margin: 0 0 10px; font-size: 1.6rem; font-weight: bold; }
+.brand span { font-size: 1rem; font-weight: normal; color: #fbc12c; margin-left: 10px; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+nav a { display: block; padding: 7px 14px; border: 2px solid #fff; border-radius: 8px; color: #fff; text-decoration: none; }
+nav a:hover { background: #1d5ba6; }
+nav a[aria-current="page"] { background: #fbc12c; border-color: #fbc12c; color: #0b2a5b; font-weight: bold; }
+main { max-width: 1050px; margin: 0 auto; padding: 20px; }
+h1 { margin: 8px 0 12px; }
+h2, h3 { margin: 0 0 8px; }
+main > h2 { margin-top: 28px; }
+.lead { font-size: 1.2rem; font-weight: bold; margin-top: 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 20px; }
+.box { background: #fff; border: 2px solid #1d5ba6; border-radius: 12px; padding: 16px; }
+.box ul { margin: 8px 0 0; padding-left: 20px; }
+.box ul.checks { list-style: none; padding-left: 0; }
+.box p { margin: 6px 0; }
+.btn, button { display: inline-block; background: #fbc12c; color: #0b2a5b; border: 2px solid #0b2a5b; border-radius: 8px; padding: 8px 18px; font-weight: bold; text-decoration: none; font-size: 1rem; cursor: pointer; }
+input[type="text"], input[type="tel"], input[type="email"], input[type="number"], textarea { width: 100%; border: 2px solid #9db8dd; border-radius: 8px; padding: 6px 8px; font: inherit; }
+a { color: #1d5ba6; }
+.note { background: #fff8e1; border: 2px solid #fbc12c; border-radius: 12px; padding: 12px 16px; font-weight: bold; }
+footer { background: #0b2a5b; color: #fff; text-align: center; padding: 6px 20px; }
+</style>
+</head>
+<body>
+<header>
+  <p class="brand">HandaPH <span>Be Prepared. Stay Safe.</span></p>
+  <nav aria-label="Main"><ul><li><a href="./">Home</a></li><li><a href="hazards.html">Choose Hazard</a></li><li><a href="checklist.html">My Checklist</a></li><li><a href="kit-guide.html">Kit Guide</a></li><li><a href="family-plan.html">Family Plan</a></li><li><a href="about.html" aria-current="page">About and Help</a></li></ul></nav>
+</header>
+<main>
+<h1>About and Help</h1>
+<div class="grid">
+<section class="box"><h2>Building Resilient Communities, Together</h2><p>Our mission: to empower every Filipino with the knowledge and tools to be prepared for any disaster.</p></section>
+</div>
+<h2>Frequently Asked Questions</h2>
+<div class="grid">
+<section class="box"><h3>How to use this website?</h3><p>Start at Choose Hazard to learn what to do, then fill out My Checklist, review the Kit Guide and write your Family Plan.</p></section>
+<section class="box"><h3>What to do in an emergency?</h3><p>Stay calm, move to a safe place and follow instructions from local officials. Call 911 for life-threatening emergencies.</p></section>
+<section class="box"><h3>Who do I contact?</h3><p>Dial 911 for emergencies. The Philippine Red Cross hotline is 143. Ask your barangay hall or local DRRMO about evacuation centers.</p></section>
+<section class="box"><h3>What is a resilient community?</h3><p>A community whose members know their risks, plan together and help each other prepare for and recover from disasters.</p></section>
+<section class="box"><h3>Where can I get training?</h3><p>The Philippine Red Cross, your local DRRMO and the Bureau of Fire Protection offer first aid, CPR and drills.</p></section>
+<section class="box"><h3>What sources does this use?</h3><p>General guidance based on PAGASA, PHIVOLCS, NDRRMC, the Office of Civil Defense, the Philippine Red Cross and the Bureau of Fire Protection. Always follow their latest advisories.</p></section>
+</div>
+<h2 id="help">Need More Help?</h2>
+<div class="grid">
+<section class="box"><h3>Email Support</h3><p>support@handaph.example</p></section><section class="box"><h3>Call Us</h3><p>For emergencies, dial 911.</p></section><section class="box"><h3>Live Chat</h3><p>Coming soon.</p></section>
+</div>
+</main>
+<footer><p>HandaPH &middot; Prepared Today. Safer Tomorrow.</p></footer>
+</body>
+</html>

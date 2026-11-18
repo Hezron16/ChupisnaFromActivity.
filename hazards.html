@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choose Hazard — HandaPH</title>
+<style>
+/* HandaPH simple prototype: boxes, a little color, no images */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #0b2a5b; background: #eef4fb; line-height: 1.5; }
+header { background: #0b2a5b; color: #fff; padding: 14px 20px; }
+.brand { margin: 0 0 10px; font-size: 1.6rem; font-weight: bold; }
+.brand span { font-size: 1rem; font-weight: normal; color: #fbc12c; margin-left: 10px; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+nav a { display: block; padding: 7px 14px; border: 2px solid #fff; border-radius: 8px; color: #fff; text-decoration: none; }
+nav a:hover { background: #1d5ba6; }
+nav a[aria-current="page"] { background: #fbc12c; border-color: #fbc12c; color: #0b2a5b; font-weight: bold; }
+main { max-width: 1050px; margin: 0 auto; padding: 20px; }
+h1 { margin: 8px 0 12px; }
+h2, h3 { margin: 0 0 8px; }
+main > h2 { margin-top: 28px; }
+.lead { font-size: 1.2rem; font-weight: bold; margin-top: 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 20px; }
+.box { background: #fff; border: 2px solid #1d5ba6; border-radius: 12px; padding: 16px; }
+.box ul { margin: 8px 0 0; padding-left: 20px; }
+.box ul.checks { list-style: none; padding-left: 0; }
+.box p { margin: 6px 0; }
+.btn, button { display: inline-block; background: #fbc12c; color: #0b2a5b; border: 2px solid #0b2a5b; border-radius: 8px; padding: 8px 18px; font-weight: bold; text-decoration: none; font-size: 1rem; cursor: pointer; }
+input[type="text"], input[type="tel"], input[type="email"], input[type="number"], textarea { width: 100%; border: 2px solid #9db8dd; border-radius: 8px; padding: 6px 8px; font: inherit; }
+a { color: #1d5ba6; }
+.note { background: #fff8e1; border: 2px solid #fbc12c; border-radius: 12px; padding: 12px 16px; font-weight: bold; }
+footer { background: #0b2a5b; color: #fff; text-align: center; padding: 6px 20px; }
+</style>
+</head>
+<body>
+<header>
+  <p class="brand">HandaPH <span>Be Prepared. Stay Safe.</span></p>
+  <nav aria-label="Main"><ul><li><a href="./">Home</a></li><li><a href="hazards.html" aria-current="page">Choose Hazard</a></li><li><a href="checklist.html">My Checklist</a></li><li><a href="kit-guide.html">Kit Guide</a></li><li><a href="family-plan.html">Family Plan</a></li><li><a href="about.html">About and Help</a></li></ul></nav>
+</header>
+<main>
+<h1>Choose Your Hazard</h1>
+<div class="grid">
+<section class="box"><h2>Typhoon</h2><p><strong>Know the risks. Be ready.</strong></p><ul><li>Follow PAGASA bulletins and local announcements.</li><li>Secure windows and doors; charge phones and power banks.</li><li>Stay indoors and away from windows during the storm.</li><li>Evacuate when local officials tell you to.</li></ul></section>
+<section class="box"><h2>Flood</h2><p><strong>Prepare before it rises.</strong></p><ul><li>Know your flood-prone areas and the nearest higher ground.</li><li>Move valuables and documents to a higher place.</li><li>Never walk or drive through floodwater.</li><li>Switch off the main power if water enters your home.</li></ul></section>
+<section class="box"><h2>Earthquake</h2><p><strong>Know what to do.</strong></p><ul><li>Secure heavy furniture to the wall.</li><li>DROP, COVER and HOLD ON under a sturdy table.</li><li>Stay away from windows; do not use elevators.</li><li>Expect aftershocks and follow PHIVOLCS advisories.</li></ul></section>
+<section class="box"><h2>Fire</h2><p><strong>Prevent and protect. Be prepared.</strong></p><ul><li>Install smoke alarms; never leave cooking unattended.</li><li>Plan two ways out of every room and practice.</li><li>Get low under smoke; feel doors before opening them.</li><li>Once out, stay out. Call 911 or the Bureau of Fire Protection.</li></ul></section>
+</div>
+<p class="note">In an emergency, call 911.</p>
+</main>
+<footer><p>HandaPH &middot; Prepared Today. Safer Tomorrow.</p></footer>
+</body>
+</html>
